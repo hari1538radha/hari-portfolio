@@ -11,7 +11,7 @@
     responsive: true,
     parallaxBackgrounds: true,
     parallaxElements: true,
-    horizontalScrolling: false,
+    horizontalScrolling: true,
     hideDistantElements: false,
     scrollProperty: 'scroll'
   });
