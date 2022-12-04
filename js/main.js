@@ -13,7 +13,7 @@
     parallaxElements: true,
     horizontalScrolling: true,
     hideDistantElements: false,
-    scrollProperty: 'scroll'
+  
   });
 
 
@@ -33,12 +33,12 @@
 			if($('#ftco-loader').length > 0) {
 				$('#ftco-loader').removeClass('show');
 			}
-		}, 1);
+		}, 2100);
 	};
 	loader();
 
 	// Scrollax
-//    $.Scrollax();
+   $.Scrollax();
 
 
 
@@ -134,72 +134,72 @@
 	});
 
 	// scroll
-	// var scrollWindow = function() {
-	// 	$(window).scroll(function(){
-	// 		var $w = $(this),
-	// 				st = $w.scrollTop(),
-	// 				navbar = $('.ftco_navbar'),
-	// 				sd = $('.js-scroll-wrap');
+	var scrollWindow = function() {
+		$(window).scroll(function(){
+			var $w = $(this),
+					st = $w.scrollTop(),
+					navbar = $('.ftco_navbar'),
+					sd = $('.js-scroll-wrap');
 
-	// 		if (st > 150) {
-	// 			if ( !navbar.hasClass('scrolled') ) {
-	// 				navbar.addClass('scrolled');	
-	// 			}
-	// 		} 
-	// 		if (st < 150) {
-	// 			if ( navbar.hasClass('scrolled') ) {
-	// 				navbar.removeClass('scrolled sleep');
-	// 			}
-	// 		} 
-	// 		if ( st > 350 ) {
-	// 			if ( !navbar.hasClass('awake') ) {
-	// 				navbar.addClass('awake');	
-	// 			}
+			if (st > 150) {
+				if ( !navbar.hasClass('scrolled') ) {
+					navbar.addClass('scrolled');	
+				}
+			} 
+			if (st < 150) {
+				if ( navbar.hasClass('scrolled') ) {
+					navbar.removeClass('scrolled sleep');
+				}
+			} 
+			if ( st > 350 ) {
+				if ( !navbar.hasClass('awake') ) {
+					navbar.addClass('awake');	
+				}
 				
-	// 			if(sd.length > 0) {
-	// 				sd.addClass('sleep');
-	// 			}
-	// 		}
-	// 		if ( st < 350 ) {
-	// 			if ( navbar.hasClass('awake') ) {
-	// 				navbar.removeClass('awake');
-	// 				navbar.addClass('sleep');
-	// 			}
-	// 			if(sd.length > 0) {
-	// 				sd.removeClass('sleep');
-	// 			}
-	// 		}
-	// 	});
-	// };
-	// scrollWindow();
+				if(sd.length > 0) {
+					sd.addClass('sleep');
+				}
+			}
+			if ( st < 350 ) {
+				if ( navbar.hasClass('awake') ) {
+					navbar.removeClass('awake');
+					navbar.addClass('sleep');
+				}
+				if(sd.length > 0) {
+					sd.removeClass('sleep');
+				}
+			}
+		});
+	};
+	scrollWindow();
 
 	
 
-	var counter = function() {
+	// var counter = function() {
 		
-		$('#section-counter, .hero-wrap, .ftco-counter, .ftco-about').waypoint( function( direction ) {
+	// 	$('#section-counter, .hero-wrap, .ftco-counter, .ftco-about').waypoint( function( direction ) {
 
-			if( direction === 'down' && !$(this.element).hasClass('ftco-animated') ) {
+	// 		if( direction === 'down' && !$(this.element).hasClass('ftco-animated') ) {
 
-				var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',')
-				$('.number').each(function(){
-					var $this = $(this),
-						num = $this.data('number');
-						console.log(num);
-					$this.animateNumber(
-					  {
-					    number: num,
-					    numberStep: comma_separator_number_step
-					  }, 7000
-					);
-				});
+	// 			var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',')
+	// 			$('.number').each(function(){
+	// 				var $this = $(this),
+	// 					num = $this.data('number');
+	// 					console.log(num);
+	// 				$this.animateNumber(
+	// 				  {
+	// 				    number: num,
+	// 				    numberStep: comma_separator_number_step
+	// 				  }, 7000
+	// 				);
+	// 			});
 				
-			}
+	// 		}
 
-		} , { offset: '95%' } );
+	// 	} , { offset: '95%' } );
 
-	}
-	counter();
+	// }
+	// counter();
 
 
 	var contentWayPoint = function() {
