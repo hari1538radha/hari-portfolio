@@ -165,12 +165,14 @@ figure {
   margin: 0 0 1rem; }
 
 img {
-  vertical-align: middle;
-  border-style: none; }
+  vertical-align:top;
+  border-style: none;
+  background-size: cover; }
 
 svg {
   overflow: hidden;
-  vertical-align: middle; }
+  vertical-align: middle;
+background-size: cover; }
 
 table {
   border-collapse: collapse; }
