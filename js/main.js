@@ -38,29 +38,29 @@
 	loader();
 
 	// Scrollax
-   $.Scrollax();
+//    $.Scrollax();
 
 
 
    // Burger Menu
-	var burgerMenu = function() {
+	// var burgerMenu = function() {
 
-		$('body').on('click', '.js-fh5co-nav-toggle', function(event){
+	// 	$('body').on('click', '.js-fh5co-nav-toggle', function(event){
 
-			event.preventDefault();
+	// 		event.preventDefault();
 
-			if ( $('#ftco-nav').is(':visible') ) {
-				$(this).removeClass('active');
-			} else {
-				$(this).addClass('active');	
-			}
+	// 		if ( $('#ftco-nav').is(':visible') ) {
+	// 			$(this).removeClass('active');
+	// 		} else {
+	// 			$(this).addClass('active');	
+	// 		}
 
 			
 			
-		});
+	// 	});
 
-	};
-	burgerMenu();
+	// };
+	// burgerMenu();
 
 
 	var onePageClick = function() {
