@@ -441,10 +441,10 @@ pre {
     font-size: inherit;
     color: inherit;
     word-break: normal; }
-
+/* 
 .pre-scrollable {
   max-height: 340px;
-  overflow-y: scroll; }
+  overflow-y: scroll; } */
 
 .container {
   width: 100%;
@@ -1549,6 +1549,7 @@ pre {
     display: block;
     width: 100%;
     overflow-x: auto;
+    overflow-y: scroll;
     -webkit-overflow-scrolling: touch; }
     .table-responsive-sm > .table-bordered {
       border: 0; } }
@@ -1584,6 +1585,7 @@ pre {
   display: block;
   width: 100%;
   overflow-x: auto;
+  
   -webkit-overflow-scrolling: touch; }
   .table-responsive > .table-bordered {
     border: 0; }
