@@ -6608,7 +6608,9 @@ button.bg-dark:focus {
 .mt-3,
 .my-3 {
   margin-top: 1rem !important; }
-
+.w-3{
+  width: 94px !important;
+}
 .mr-3,
 .mx-3 {
   margin-right: 1rem !important; }
