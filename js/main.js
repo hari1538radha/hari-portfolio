@@ -42,25 +42,24 @@
 
 
 
-   // Burger Menu
-	// var burgerMenu = function() {
+	var burgerMenu = function() {
 
-	// 	$('body').on('click', '.js-fh5co-nav-toggle', function(event){
+		$('body').on('click', '.js-fh5co-nav-toggle', function(event){
 
-	// 		event.preventDefault();
+			event.preventDefault();
 
-	// 		if ( $('#ftco-nav').is(':visible') ) {
-	// 			$(this).removeClass('active');
-	// 		} else {
-	// 			$(this).addClass('active');	
-	// 		}
+			if ( $('#ftco-nav').is(':visible') ) {
+				$(this).removeClass('active');
+			} else {
+				$(this).addClass('active');	
+			}
 
 			
 			
-	// 	});
+		});
 
-	// };
-	// burgerMenu();
+	};
+	burgerMenu();
 
 
 	var onePageClick = function() {
@@ -175,31 +174,31 @@
 
 	
 
-	// var counter = function() {
+	var counter = function() {
 		
-	// 	$('#section-counter, .hero-wrap, .ftco-counter, .ftco-about').waypoint( function( direction ) {
+		$('#section-counter, .hero-wrap, .ftco-counter, .ftco-about').waypoint( function( direction ) {
 
-	// 		if( direction === 'down' && !$(this.element).hasClass('ftco-animated') ) {
+			if( direction === 'down' && !$(this.element).hasClass('ftco-animated') ) {
 
-	// 			var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',')
-	// 			$('.number').each(function(){
-	// 				var $this = $(this),
-	// 					num = $this.data('number');
-	// 					console.log(num);
-	// 				$this.animateNumber(
-	// 				  {
-	// 				    number: num,
-	// 				    numberStep: comma_separator_number_step
-	// 				  }, 7000
-	// 				);
-	// 			});
+				var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',')
+				$('.number').each(function(){
+					var $this = $(this),
+						num = $this.data('number');
+						console.log(num);
+					$this.animateNumber(
+					  {
+					    number: num,
+					    numberStep: comma_separator_number_step
+					  }, 7000
+					);
+				});
 				
-	// 		}
+			}
 
-	// 	} , { offset: '95%' } );
+		} , { offset: '95%' } );
 
-	// }
-	// counter();
+	}
+	counter();
 
 
 	var contentWayPoint = function() {
